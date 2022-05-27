@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark: rgb(31, 31, 31);
+    --less_dark: rgb(50, 50, 50);
+    --light: rgb(211, 211, 211);
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+a {
+    color: var(--light);
+}
+
+/* form {
+    width: 100%;
+    border: 1px solid var(--dark);
+    background-color: var(--less_dark);
+    padding: 1rem;
+} */
+
+.form_group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.flex_row {
+    display: flex;
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space_around {
+    justify-content: space-around;
+}
+
+.space_evenly {
+    justify-content: space-evenly;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.gap_1 {
+    gap: 1rem;
+}
+
+.margin_auto {
+    margin: 0 auto;
+}
+
+.width_100 {
+    width: 100%;
+}
+
+.width_80 {
+    width: 80%;
+}
+
+.width_60 {
+    width: 60%;
+}
+
+.width_50 {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.width_20 {
+    width: 20%;
+}
+
+.btn {
+    align-self: center;
+    padding: 2px;
+    background-color: black;
+    color: var(--light);
+    border: 1px solid var(--less_dark);
+    font-size: 0.8rem;
+}
+
+.btn:hover {
+    padding: 1px;
+    border: 2px solid var(--less_dark);
+}
+
+.action:hover {
+    cursor: pointer;
+}
+
+.icon {
+    height: 1.75rem;
+    width: auto;
+}
+
+.top_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+}
+
+.content {
+    padding: 1rem 18rem;
+}
+
+.tab_content {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    background-color: rgb(50, 50, 50);
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border: 2px solid var(--light);
+    background-color: rgb(19, 19, 19);
+    border-collapse: collapse;
+}
+
+tbody tr td {
+    border: 1px solid var(--dark);
+}
+
+thead th {
+    border: 2px solid var(--light);
+    padding-bottom: 5px;
+}
+
+thead th:nth-child(1) {
+    width: 35%;
+}
+
+thead th:nth-child(2) {
+    width: 15%;
+}
+
+thead th:nth-child(3) {
+    width: 15%;
+}
+
+thead th:nth-child(4) {
+    width: 35%;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(59, 59, 59);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(36, 36, 36);
+}
+
+td {
+    padding: 0 4px 2px 4px;
+    font-size: 1rem;
+}
